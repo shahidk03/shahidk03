@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://kit.fontawesome.com/3428f29c70.js" crossorigin="anonymous"></script>
+
+    <title>Your SPA Landing Page</title>
+    <style>
+        body {
+            /* overflow: hidden; */
+        }
+
+        section {
+            padding-top: 56px;
+            ;
+            min-height: 100vh;
+        }
+
+        /* Customize styles as needed */
+        #home {
+            background-color: #74b9ff;
+        }
+
+        #services {
+            background-color: #ffeaa7;
+        }
+
+        #aboutus {
+            background-color: #dfe6e9;
+        }
+
+        #contact {
+            background-color: #b2bec3;
+        }
+
+        .animated-list li {
+            display: none;
+        }
+
+        /* Custom class for blinking animation */
+        .blinking-button {
+            animation: blink-animation 3s linear infinite;
+            /* Set the animation duration and iteration */
+        }
+
+        /* Keyframes for blinking animation */
+        @keyframes blink-animation {
+
+            0%,
+            49.9%,
+            100% {
+                opacity: 1;
+            }
+
+            50%,
+            99.9% {
+                opacity: .5;
+            }
+        }
+
+        shadow-on-hover:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            /* Adjust the shadow properties as needed */
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Brand</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section>
+        <div class="container-sm text-center px-4 py-5 my-5">
+            <div class="display-5  text-body-emphasis my-5">Stay Ahead Of The Competition With</div>
+            <div class="animated-list display-1 fw-bold text-uppercase text-light rounded-3 my-5
+                ">
+                <span>Data Science</span>
+                <span>AI/ML</span>
+                <span>IoT</span>
+                <span>Secure</span>
+                <span>Cloud</span>
+                <span>Full stack</span>
+                <span>Blockchain</span>
+                <span>Scalability</span>
+                <span>Efficiency</span>
+            </div>
+            <div class=" display-5">SAAS/IOT PRODUCT</div>
+            <a href="#contact" class="btn btn-light text-primary shadow btn-lg  my-5  blinking-button lets-talk">
+                <i data-feather="phone"></i>
+
+                Book Free Consultation</a>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section id="services">
+        <div class="container-sm text-center px-4 py-3">
+            <span class="display-3 fw-bold">Services</span>
+            <BR></BR>
+            <span style="font-size: 20px;">
+                We can help you bring your product to life - Don't let your
+                first funding go in vain but invest in the right place with us. Looking to build Minimum Viable Product,
+                Designing scope, need no-code or leading full stack technologies for custom software ? We have it all
+                under one pinnacle for your business to boost it 12x</span>
+
+            <div class="row pt-5">
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <i class="text-secondary fa-solid fa-chart-simple "></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">Data Science & Analytics</h5>
+                            <p class="card-text">Take Business Decisions Intelligently Using Data Science</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <i class="text-secondary fa-solid fa-brain"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">AI/ML</h5>
+                            <p class="card-text">We Build AI Powered Applications That Deliver's Intelligence
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <!-- <i class="text-secondary fa-solid fa-bezier-curve"></i> -->
+                            <i class="text-secondary fa-solid fa-database"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">Big Data</h5>
+                            <p class="card-text">We Create Immersive User Experience & Aesthetical Designs</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <i class="text-secondary fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">Custom Software Solution</h5>
+                            <p class="card-text">Boost Your Business With Our Custom Software Solution</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <!-- <i class="text-secondary fa-solid fa-globe"></i> -->
+                            <i class="text-secondary fa-solid fa-industry"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">IIoT</h5>
+                            <p class="card-text">Connecting Everything That Matters</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <i class="text-secondary fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">Monitoring</h5>
+                            <p class="card-text">Efficiency Elevated: Harnessing IoT for Hardware Oversight</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <i class="text-secondary fa-solid fa-video"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">Computer Vision</h5>
+                            <p class="card-text">Automate manual tasks with our CV expertise</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 pb-5 d-flex justify-content-center align-items-center">
+                    <div class="card shadow-sm" style="width: 18rem;">
+                        <div class="card-header" style="font-size: 150px;">
+                            <i class=" text-secondary fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div class="card-body" style="min-height: 115px;">
+                            <h5 class="card-title">IT consultation</h5>
+                            <p class="card-text">cONSULT</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="display-3 fw-bold">
+                        Why Choose Us?
+                    </span>
+                    <br>
+                    <span class="pt-5 display-6">
+                        We believe that our clients deserve the best. That's why we offer a range of benefits that set us apart from the competition. Our team of experienced developers has a proven track record in building, launching, and scaling successful SaaS products and custom software solutions.  Connect with us to discover the difference that a true partner can make
+
+                    </span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="accordion pt-3" id="myAccordion">
+
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Maximize ROI with our Expertise
+                                </button>
+                            </h2>
+                            <div style="transition: .5s ease-in-out;" id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    Have you collected your initial funding and are ready to maximize your ROI with a cutting-edge SaaS Product & Custom Software solution? Worry not; give your product idea in to our safe hands and see the magic happening. From the first discovery call to final product testing, we will stay at your back throughout. Watch your business soar to new heights with us
+
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Customized to Perfection
+                                </button>
+                            </h2>
+                            <div style="transition: .5s ease-in-out;" id="collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    Tired of finding a SaaS Product & Custom Software solution? We got your back. Known for exceptional versatility, our Custom Software are the epitome of perfection functionality, and efficiency to meet all your needs in one place. Trust us to bring your product to life that exceeds your expectations
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Scalability at Its Finest
+                                </button>
+                            </h2>
+                            <div style="transition: .5s ease-in-out;" id="collapse3" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    Feeling stuck with your SaaS product growth? Let Yugaantar Innovations take charge and use our expertise in automation. Our software is designed to stand the test of time, with 100%scalability, so you make money even when you're asleep. Let us help you unlock the full potential of your SaaS product
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    One-Stop-Shop for All Your Needs
+                                </button>
+                            </h2>
+                            <div style="transition: .5s ease-in-out;" id="collapse4" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    Say goodbye to the hassle of knocking doors of freelancers when you can get everything in one place. From building the software to launching it in the market, you name it -we have experts to take care of everything so you can sit back and relax
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more accordion items as needed -->
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Unbeatable Data Security
+                                </button>
+                            </h2>
+                            <div style="transition: .5s ease-in-out;" id="collapse5" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    Unlock unbeatable data security with custom-built software. With Yugaantar Innovations, get access to cutting-edge features like encryption for sensitive information and multi-factor authentication for added protection to safeguard against future breaches. Have complete peace of mind while we work hard to build your SaaS Product & Custom Software
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <script type="text/javascript" src="https://form.jotform.com/jsform/221403144482042"></script>
+
+    </section>
+    <section id="footer">
+        <h1>Section6</h1>
+
+    </section>
+
+
+    <script>
+        // In regular js file be sure to include 
+        //$(document).ready(function(){}
+
+        // Add smooth scroll on all links inside the navbar
+        $("#navbarNav a").on('click', function (event) {
+            //Make sure this,hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Use jquery animate() method to add smooth scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash to URL when done scrolling -default click behavior
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+
+        $(document).ready(function () {
+            // Function to show items sequentially
+            function showItemsSequentially(index) {
+                // Hide all items
+                $('.animated-list span').hide();
+
+                // Show the current item
+                $('.animated-list span:eq(' + index + ')').fadeIn(1000, function () {
+                    // Call the function recursively for the next item
+                    setTimeout(function () {
+                        showItemsSequentially((index + 1) % $('.animated-list span').length);
+                    }, 2000); // Adjust the delay between items as needed
+                });
+            }
+
+            // Start the animation with the first item
+            showItemsSequentially(0);
+        });
+
+
+    </script>
+
+
+    <!-- Your content goes here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
